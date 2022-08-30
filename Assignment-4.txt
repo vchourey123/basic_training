@@ -1,0 +1,27 @@
+Web Assignement : 
+
+-  I’ve created postman id , used to to check http request and implementations .
+- Used pipedream SWAPI documentation to learn how particular requests are send .
+- Used swapi link on given code to access all links and perform get method on that .
+- Applied get method on characters , species and all subcategories . As only three methods could be implemented on these links i.e , Get, Head and Option .
+- Used documentation and used dummy link of jsonplaceholder for application of CRUD operations using GET, POST, PUT and DELETE methods .
+
+- A request contains body , headers, query strings and versions.
+-A response conatins Protocol version , status code , status text based on status code and Headers .  Response may also contain body .
+
+    • GET :  
+              We  use GET to read or retrieve a resource . A successful GET resturns the response containing info you need .
+    • POST :
+	We use POST to create a new resource . A POST request requires a body in which you define data of the entity to be created . 
+    • PUT :
+              We use PUT to modify  a resource . PUT updates the data or adds depending on request provided. 
+    • DELETE : 
+                  We use delete to delete a resource .
+
+- HTTP response status codes :
+    1. Informational response (100 - 199)
+    2. Successful response (200 - 299)
+    3. Redirection message (300 - 399)
+    4. Client error response (400 - 499)
+    5. Server error response (500-599)
+
