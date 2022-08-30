@@ -1,0 +1,45 @@
+    1. What is the difference between ‘apt’ and ‘apt-get’?
+       Ans 1.  apt is a command line package manager that provides cmds for searching,managing and quering info about packages where as apt-get is a cmd for insatllation , upgrade and removal of packages together .
+       
+    2. What is the difference between ‘apt-get update’ and ‘apt-get upgrade’?
+Ans 2 . apt-get update ,update’s the list of available packages apt-get upgrade upgrade the system by installing packages 
+    3. How to create a new user in the system?
+    • sudo useradd "Username"
+    • sudo passwd “Username”
+    4. ‘mkdir’ gives an error if the directory is already present, how can you fix it?
+    • 
+    5. What is .bashrc?
+    • .bashrc is a hidden file that is executed when user logs in and mostly contains configurations . We can use .bashrc file to add functions which can perform on shell like cmds .
+    6. How can we list out all the Environment Variables?
+    • GLOBALVAR = “My global variable” (declaring shell variable)
+export GLOBALVAR (exporting declared shell variable to global)
+       
+    7. How can we add a new Environment Variable?
+    • GLOBALVAR = “My global variable” (declaring shell variable)
+export GLOBALVAR (exporting declared shell variable to global)
+      
+    8. What is shell scripting?
+    • Shell script is a list of cmds that used for operations like program execution , file manipulation and text printing .We write code inside shell as shell scripts .
+    •  example : we can make a file
+                    ◦ touch file1.sh
+    •  we can add anything in file
+    •                    vim file.sh
+    • we can add bash script like by entering i the after writing esc + :wq
+                    ◦ #!/bin/bash
+                    ◦ echo “My file is executed”
+    • execute file by 
+                • bash file1.sh
+
+    • ls -  Is used to list files in directory 
+    • mkdir – Is used to make directory
+    • cat – Is used to print contents of file
+    • apt – is a package manager used with prefix sudo for searching ,managing and quering information 
+    • dpkg – dpkg is also used with sudo and used to interact with packages on our system , used to insatll ,build , remove  debian packages . 
+    • Kill – kill is used to kill operations using process ids.
+    • Lsof –  gives list of open files 
+    • netstat -  Is used for troubleshooting and configuration and used to display all network connetions on system .
+    • service vs systemctl – service cmd is used to run a systemV init script , service cmd can start stop and restart daemons and other services . Systemctl operates on file in /lib /sytem.d and then moves to /etc /init.d.
+    • vim vs nano – vim is a mode based text editor which used to edit files and takes cmds like insert ot edit file, where as nano is what you see is what you get text editor.
+    • sudo vs normal user – sudo is switch user do , which gives priveleged cmds access and normal user would get permission denied to that.
+    • sudo su – This cmd gives sudo properties to su i.e, you can work as an administrator and dont have to apply password for priveleged cmds .
+		
