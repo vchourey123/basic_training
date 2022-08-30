@@ -1,0 +1,113 @@
+
+    1. Create a private Gitlab repo named "i-am-a-git-noob"
+
+       Ans 1.  https://github.com/vchourey123/-i-am-a-git-noob-/tree/main
+       
+    2. Create a new repository on local in an empty directory (NOTE: do not clone)
+Ques: What changes did you observe in the current directory after initializing the local repo?
+ 
+Ans 2. 	mkdir empty_folder
+		cd empty_folder
+		git init
+	After inintializing a hidden folder i.e. .git folder is appeared
+
+    3. Point remote of your local git repo to the newly created repo on Gitlab 
+
+Ans 3. git remote add origin git@github.com:vchourey123/-i-am-a-git-noob-.git
+
+    4. Print current git configs on terminal
+
+       Ans 4. git config –-list –-global (global configuration of user local system )
+           git config –-list –-local (local configurations of git repository like added remote url for fetch and push)
+git config –-list –-system (sytem configurations you have assigned like aliases of cmds)
+
+    5. Update git config with your name and email address (only for the current repository)
+
+Ans 5. git config --local user.email "vedantchourey145@gmail.com"
+	git config --local user.name "Vedant Chourey"
+
+    6. Create a file named "test1.txt"
+
+Ans6. touch "test1.txt"
+
+    7. Added line with text "first line in file" in "test1.txt".
+
+Ans7. echo "first line in file" >> test1.txt
+
+    8. Push this file to your Gitlab repo.
+
+Ans 8. git add .
+	git commit -m "line added"
+	git push -u origin master
+           
+    9. Append line with text "second line in file" in "test1.txt".
+
+       Ans 9.  echo "My 2nd line in file" >> test1.txt
+
+    10. Add file to the staging area.
+
+       Ans 10. git add test1.txt
+       
+    11. Check the status of the file in all staging area
+          
+          Ans 11. git status
+
+    12. Append line with text "Third line in file" in "test1.txt". (Note status of files across different areas).
+
+       Ans 12. echo "Third line in file" >> test1.txt
+       
+    13. Remove "test1.txt" from the staging area.
+
+       Ans 13. git reset
+ 
+    14. Create a commit with the message "My First Commit"
+
+       Ans 14. 	git add .
+		git commit -m "My First commit"
+
+    15. Push commit to the remote repo 
+NOTE: checklist commits pushed to the remote 
+
+   Ans 15.  git push -u origin master
+
+    16. Update message of last commit "My First Commit" to "My Second Commit" (without creating a new commit)
+
+Ans 16. git commit --amend -m "My Second Commit"
+       
+    17. Push commit with the updated message to the remote repo
+
+       Ans 17.  git push --force-with-lease origin master
+
+    18. Check the difference between the last and second-last commits.
+
+       Ans 18. git log (shows commit id’s)
+                   git diff last_commit_id seconlast_commit_id
+
+    19. Revert the last commit and check the updated commit logs history.
+
+       Ans 19. git revert e49de939b271874be8cd5573b32aba0dda44e160
+
+    20. Append the line with the text "Fourth line in file" in "test1.txt" and commit it.
+
+       Ans 20. echo "Fourth line in file" >> test1.txt
+
+    21. Update the last commit such that the "test1.txt"  also contains "Fifth line in file" (without creating a new commit)
+       
+       Ans 21. git add . 
+             git commit --amend -m "Fourth line is added"
+
+    22. Push the updated commits to the remote repository
+
+Ans 22. git push -u origin master
+
+    23. Append some content in the "test1.txt" file
+
+       Ans 23. echo "Some content" >> test1.txt
+
+    24. Pull all the content from the remote repository to the local repository
+
+       Ans 24 . git pull origin
+
+    25. Clone the remote repository to some other directory in your local system.
+
+       Ans 25. 
